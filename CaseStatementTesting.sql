@@ -2,38 +2,39 @@
 
 Select
 	emp_no,
-    first_name,
-    last_name,
+	first_name,
+    	last_name,
 Case
 	When gender = 'm'
-    Then 'Male'
+    Then 
+	'Male'
     Else
-		'Female'
+	'Female'
 	End as Gender
 From
-		employees;
+	employees;
 --
 Select
 	emp_no,
-    first_name,
-    last_name,
+    	first_name,
+    	last_name,
 Case gender
 	When 'm'
     Then 'Male'
     Else
-		'Female'
+	'Female'
 	End as Gender
 From
-		employees;
+	employees;
 --
 Select
 	e.emp_no,
-    e.first_name,
-    e.last_name,
+	e.first_name,
+	e.last_name,
 Case
 	When dm.emp_no is not null then 'Manager'
     Else
-		'Employee'
+	'Employee'
 	End as is_manager
 From
 	employees e
@@ -44,12 +45,12 @@ From
 --
 Select
 	e.emp_no,
-    e.first_name,
-    e.last_name,
+	e.first_name,
+	e.last_name,
 Case
 	When dm.emp_no is not null then 'Manager' 
     Else
-		'Employee'
+	'Employee'
 	End as is_manager
 From
 	employees e
@@ -60,8 +61,8 @@ From
 --
 Select
 	emp_no,
-    first_name,
-    last_name,
+	first_name,
+	last_name,
 	if (gender = 'm','Male', 'Female') as gender
 From
 	employees;
