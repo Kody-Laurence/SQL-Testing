@@ -10,6 +10,8 @@
 -- lower query cost with temporary tables if done directly --
 --
 
+Use employees;
+
 Create Temporary Table f_highest_salaries
 Select
 	s.emp_no, max(s.salary) as f_highest_salary
