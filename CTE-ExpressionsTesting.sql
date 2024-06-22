@@ -1,6 +1,8 @@
 -- Common table expressions --
 -- Tool for obtaining temporary result sets within execution of given query --
 -- Example --
+Use employees;
+
 Select
 	avg(salary) as avg_salary
 From
