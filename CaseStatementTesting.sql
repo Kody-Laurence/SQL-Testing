@@ -1,5 +1,7 @@
 -- Coalesce(), IFNULL() --
 
+Use employees;
+
 Select
 	emp_no,
 	first_name,
