@@ -1,4 +1,7 @@
 --
+
+Use employees;
+
 Drop Table if exists
 	departments_dup;
 Create Table
